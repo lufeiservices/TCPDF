@@ -9,33 +9,33 @@
 // -------------------------------------------------------------------
 // Copyright (C) 2002-2025 Nicola Asuni - Tecnick.com LTD
 //
-// This file is part of TCPDF software library.
+// This file is part of tcpdf software library.
 //
-// TCPDF is free software: you can redistribute it and/or modify it
+// tcpdf is free software: you can redistribute it and/or modify it
 // under the terms of the GNU Lesser General Public License as
 // published by the Free Software Foundation, either version 3 of the
 // License, or (at your option) any later version.
 //
-// TCPDF is distributed in the hope that it will be useful, but
+// tcpdf is distributed in the hope that it will be useful, but
 // WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 // See the GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the License
-// along with TCPDF. If not, see
+// along with tcpdf. If not, see
 // <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
 //
 // See LICENSE.TXT file for more information.
 // -------------------------------------------------------------------
 //
 // Description :
-//   Static methods used by the TCPDF class.
+//   Static methods used by the tcpdf class.
 //
 //============================================================+
 
 /**
  * @file
- * This is a PHP class that contains static methods for the TCPDF class.<br>
+ * This is a PHP class that contains static methods for the tcpdf class.<br>
  * @package com.tecnick.tcpdf
  * @author Nicola Asuni
  * @version 1.1.5
@@ -43,7 +43,7 @@
 
 /**
  * @class TCPDF_STATIC
- * Static methods used by the TCPDF class.
+ * Static methods used by the tcpdf class.
  * @package com.tecnick.tcpdf
  * @brief PHP class for generating PDF documents without requiring external extensions.
  * @version 1.1.5
@@ -52,7 +52,7 @@
 class TCPDF_STATIC {
 
 	/**
-	 * Current TCPDF version.
+	 * Current tcpdf version.
 	 * @private static
 	 */
 	private static $tcpdf_version = '6.10.1';
@@ -134,8 +134,8 @@ class TCPDF_STATIC {
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 	/**
-	 * Return the current TCPDF version.
-	 * @return string TCPDF version string
+	 * Return the current tcpdf version.
+	 * @return string tcpdf version string
 	 * @since 5.9.012 (2010-11-10)
 	 * @public static
 	 */
@@ -144,8 +144,8 @@ class TCPDF_STATIC {
 	}
 
 	/**
-	 * Return the current TCPDF producer.
-	 * @return string TCPDF producer string
+	 * Return the current tcpdf producer.
+	 * @return string tcpdf producer string
 	 * @since 6.0.000 (2013-03-16)
 	 * @public static
 	 */
@@ -282,7 +282,7 @@ class TCPDF_STATIC {
 	/**
 	 * Returns a temporary filename for caching object on filesystem.
 	 * @param string $type Type of file (name of the subdir on the tcpdf cache folder).
-	 * @param string $file_id TCPDF file_id.
+	 * @param string $file_id tcpdf file_id.
 	 * @return string filename.
 	 * @since 4.5.000 (2008-12-31)
 	 * @public static
