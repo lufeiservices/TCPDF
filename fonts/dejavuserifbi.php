@@ -1,5 +1,5 @@
 <?php
-// TCPDF FONT FILE DESCRIPTION
+// tcpdf FONT FILE DESCRIPTION
 $type='TrueTypeUnicode';
 $name='DejaVuSerif-BoldItalic';
 $up=-63;
