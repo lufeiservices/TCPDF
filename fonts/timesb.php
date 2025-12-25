@@ -1,5 +1,5 @@
 <?php
-// TCPDF FONT FILE DESCRIPTION
+// tcpdf FONT FILE DESCRIPTION
 $type='core';
 $name='Times-Bold';
 $up=-100;
