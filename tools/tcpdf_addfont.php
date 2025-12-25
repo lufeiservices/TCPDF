@@ -11,32 +11,32 @@
 // -------------------------------------------------------------------
 // Copyright (C) 2011-2013 Nicola Asuni - Tecnick.com LTD
 //
-// This file is part of TCPDF software library.
+// This file is part of tcpdf software library.
 //
-// TCPDF is free software: you can redistribute it and/or modify it
+// tcpdf is free software: you can redistribute it and/or modify it
 // under the terms of the GNU Lesser General Public License as
 // published by the Free Software Foundation, either version 3 of the
 // License, or (at your option) any later version.
 //
-// TCPDF is distributed in the hope that it will be useful, but
+// tcpdf is distributed in the hope that it will be useful, but
 // WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 // See the GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the License
-// along with TCPDF. If not, see
+// along with tcpdf. If not, see
 // <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
 //
 // See LICENSE.TXT file for more information.
 // -------------------------------------------------------------------
 //
-// Description : This is a command line script to generate TCPDF fonts.
+// Description : This is a command line script to generate tcpdf fonts.
 //
 //============================================================+
 
 /**
  * @file
- * This is a command line script to generate TCPDF fonts.<br>
+ * This is a command line script to generate tcpdf fonts.<br>
  * @package com.tecnick.tcpdf
  * @version 1.0.000
  */
@@ -59,7 +59,7 @@ foreach ($tcpdf_include_dirs as $tcpdf_include_path) {
  */
 function showHelp() {
 	$help = <<<EOD
-tcpdf_addfont - command line tool to convert fonts for the TCPDF library.
+tcpdf_addfont - command line tool to convert fonts for the tcpdf library.
 
 Usage: tcpdf_addfont.php [ options ] -i fontfile[,fontfile]...
 
@@ -238,7 +238,7 @@ if (!is_dir($options['outpath']) OR !is_writable($options['outpath'])) {
 	exit(3);
 }
 
-echo "\n>>> Converting fonts for TCPDF:\n";
+echo "\n>>> Converting fonts for tcpdf:\n";
 
 echo '*** Output dir set to '.$options['outpath']."\n";
 

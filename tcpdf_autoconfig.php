@@ -9,33 +9,33 @@
 // -------------------------------------------------------------------
 // Copyright (C) 2011-2025 Nicola Asuni - Tecnick.com LTD
 //
-// This file is part of TCPDF software library.
+// This file is part of tcpdf software library.
 //
-// TCPDF is free software: you can redistribute it and/or modify it
+// tcpdf is free software: you can redistribute it and/or modify it
 // under the terms of the GNU Lesser General Public License as
 // published by the Free Software Foundation, either version 3 of the
 // License, or (at your option) any later version.
 //
-// TCPDF is distributed in the hope that it will be useful, but
+// tcpdf is distributed in the hope that it will be useful, but
 // WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 // See the GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the License
-// along with TCPDF. If not, see
+// along with tcpdf. If not, see
 // <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
 //
 // See LICENSE.TXT file for more information.
 // -------------------------------------------------------------------
 //
-// Description : Try to automatically configure some TCPDF
+// Description : Try to automatically configure some tcpdf
 //               constants if not defined.
 //
 //============================================================+
 
 /**
  * @file
- * Try to automatically configure some TCPDF constants if not defined.
+ * Try to automatically configure some tcpdf constants if not defined.
  * @package com.tecnick.tcpdf
  * @version 1.2.1
  */
@@ -142,15 +142,15 @@ if (!defined('PDF_PAGE_ORIENTATION')) {
 }
 
 if (!defined('PDF_CREATOR')) {
-	define ('PDF_CREATOR', 'TCPDF');
+	define ('PDF_CREATOR', 'tcpdf');
 }
 
 if (!defined('PDF_AUTHOR')) {
-	define ('PDF_AUTHOR', 'TCPDF');
+	define ('PDF_AUTHOR', 'tcpdf');
 }
 
 if (!defined('PDF_HEADER_TITLE')) {
-	define ('PDF_HEADER_TITLE', 'TCPDF Example');
+	define ('PDF_HEADER_TITLE', 'tcpdf Example');
 }
 
 if (!defined('PDF_HEADER_STRING')) {
