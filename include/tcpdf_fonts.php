@@ -9,38 +9,38 @@
 // -------------------------------------------------------------------
 // Copyright (C) 2008-2025 Nicola Asuni - Tecnick.com LTD
 //
-// This file is part of TCPDF software library.
+// This file is part of tcpdf software library.
 //
-// TCPDF is free software: you can redistribute it and/or modify it
+// tcpdf is free software: you can redistribute it and/or modify it
 // under the terms of the GNU Lesser General Public License as
 // published by the Free Software Foundation, either version 3 of the
 // License, or (at your option) any later version.
 //
-// TCPDF is distributed in the hope that it will be useful, but
+// tcpdf is distributed in the hope that it will be useful, but
 // WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 // See the GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+// along with tcpdf.  If not, see <http://www.gnu.org/licenses/>.
 //
 // See LICENSE.TXT file for more information.
 // -------------------------------------------------------------------
 //
-// Description :Font methods for TCPDF library.
+// Description :Font methods for tcpdf library.
 //
 //============================================================+
 
 /**
  * @file
- * Unicode data and font methods for TCPDF library.
+ * Unicode data and font methods for tcpdf library.
  * @author Nicola Asuni
  * @package com.tecnick.tcpdf
  */
 
 /**
  * @class TCPDF_FONTS
- * Font methods for TCPDF library.
+ * Font methods for tcpdf library.
  * @package com.tecnick.tcpdf
  * @version 1.1.1
  * @author Nicola Asuni - info@tecnick.com
@@ -64,7 +64,7 @@ class TCPDF_FONTS {
 	 * @param int $encid Encoding ID for CMAP table to extract (when building a Unicode font for Windows this value should be 1, for Macintosh should be 0). When Platform ID is 3, legal values for Encoding ID are: 0=Symbol, 1=Unicode, 2=ShiftJIS, 3=PRC, 4=Big5, 5=Wansung, 6=Johab, 7=Reserved, 8=Reserved, 9=Reserved, 10=UCS-4.
 	 * @param boolean $addcbbox If true includes the character bounding box information on the php font file.
 	 * @param boolean $link If true link to system font instead of copying the font data (not transportable) - Note: do not work with Type1 fonts.
-	 * @return string|false TCPDF font name or boolean false in case of error.
+	 * @return string|false tcpdf font name or boolean false in case of error.
 	 * @author Nicola Asuni
 	 * @since 5.9.123 (2010-09-30)
 	 * @public static
@@ -76,7 +76,7 @@ class TCPDF_FONTS {
 		}
 		// font metrics
 		$fmetric = array();
-		// build new font name for TCPDF compatibility
+		// build new font name for tcpdf compatibility
 		$font_path_parts = pathinfo($fontfile);
 		if (!isset($font_path_parts['filename'])) {
 			$font_path_parts['filename'] = substr($font_path_parts['basename'], 0, -(strlen($font_path_parts['extension']) + 1));
@@ -824,7 +824,7 @@ class TCPDF_FONTS {
 		}
 		// ---------- create php font file ----------
 		$pfile = '<'.'?'.'php'."\n";
-		$pfile .= '// TCPDF FONT FILE DESCRIPTION'."\n";
+		$pfile .= '// tcpdf FONT FILE DESCRIPTION'."\n";
 		$pfile .= '$type=\''.$fmetric['type'].'\';'."\n";
 		$pfile .= '$name=\''.$fmetric['name'].'\';'."\n";
 		$pfile .= '$up='.$fmetric['underlinePosition'].';'."\n";
@@ -916,7 +916,7 @@ class TCPDF_FONTS {
 		$fp = TCPDF_STATIC::fopenLocal($outpath.$font_name.'.php', 'w');
 		fwrite($fp, $pfile);
 		fclose($fp);
-		// return TCPDF font name
+		// return tcpdf font name
 		return $font_name;
 	}
 
