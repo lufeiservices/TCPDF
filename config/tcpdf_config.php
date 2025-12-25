@@ -4,32 +4,32 @@
 // Begin       : 2004-06-11
 // Last Update : 2014-12-11
 //
-// Description : Configuration file for TCPDF.
+// Description : Configuration file for tcpdf.
 // Author      : Nicola Asuni - Tecnick.com LTD - www.tecnick.com - info@tecnick.com
 // License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
 // -------------------------------------------------------------------
 // Copyright (C) 2004-2014  Nicola Asuni - Tecnick.com LTD
 //
-// This file is part of TCPDF software library.
+// This file is part of tcpdf software library.
 //
-// TCPDF is free software: you can redistribute it and/or modify it
+// tcpdf is free software: you can redistribute it and/or modify it
 // under the terms of the GNU Lesser General Public License as
 // published by the Free Software Foundation, either version 3 of the
 // License, or (at your option) any later version.
 //
-// TCPDF is distributed in the hope that it will be useful, but
+// tcpdf is distributed in the hope that it will be useful, but
 // WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 // See the GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+// along with tcpdf.  If not, see <http://www.gnu.org/licenses/>.
 //
 // See LICENSE.TXT file for more information.
 //============================================================+
 
 /**
- * Configuration file for TCPDF.
+ * Configuration file for tcpdf.
  * @author Nicola Asuni
  * @package com.tecnick.tcpdf
  * @version 4.9.005
@@ -99,17 +99,17 @@ define ('PDF_PAGE_ORIENTATION', 'P');
 /**
  * Document creator.
  */
-define ('PDF_CREATOR', 'TCPDF');
+define ('PDF_CREATOR', 'tcpdf');
 
 /**
  * Document author.
  */
-define ('PDF_AUTHOR', 'TCPDF');
+define ('PDF_AUTHOR', 'tcpdf');
 
 /**
  * Header title.
  */
-define ('PDF_HEADER_TITLE', 'TCPDF Example');
+define ('PDF_HEADER_TITLE', 'tcpdf Example');
 
 /**
  * Header description string.
@@ -207,13 +207,13 @@ define('K_SMALL_RATIO', 2/3);
 define('K_THAI_TOPCHARS', true);
 
 /**
- * If true allows to call TCPDF methods using HTML syntax
+ * If true allows to call tcpdf methods using HTML syntax
  * IMPORTANT: For security reason, disable this feature if you are printing user HTML content.
  */
 define('K_TCPDF_CALLS_IN_HTML', false);
 
 /**
- * List of TCPDF methods that are allowed to be called using HTML syntax.
+ * List of tcpdf methods that are allowed to be called using HTML syntax.
  * Note: each method name must end with surrounded with | (pipe) character.
  * The constant K_TCPDF_CALLS_IN_HTML must be set to true.
  * IMPORTANT: For security reason, disable this feature if you are allowing user HTML content.
