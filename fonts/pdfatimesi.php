@@ -1,5 +1,5 @@
 <?php
-// TCPDF FONT FILE DESCRIPTION
+// tcpdf FONT FILE DESCRIPTION
 $type='Type1';
 $name='PDFATimesItalic';
 $up=-100;
